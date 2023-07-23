@@ -311,6 +311,7 @@ button {
 
 .discount-input input {
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #0f241b;
   outline: none;
   color: var(--grey-primary);
