@@ -99,6 +99,76 @@ a {
   font-family: "Cerebri";
 }
 
+/* Progress bar */
+
+.progress-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+.progress-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #e2e9e6;
+  z-index: -1;
+}
+
+.progress {
+  background-color: #03a84e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52%;
+  height: 4px;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+
+.progress-step {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Cerebri";
+}
+
+.progress-step::after {
+  content: attr(progress-title);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  color: var(--grey-tertiary);
+}
+
+.progress-step.done {
+  background-color: #14b757;
+}
+.progress-step-signup::after {
+  margin-left: 0.6rem;
+}
+
+.progress-step.inprogress {
+  background-color: var(--green-primary);
+}
+
+.progress-step.inprogress::after {
+  color: var(--green-primary);
+}
+
+.progress-step.inactive {
+  background-color: #f0f4f2;
+  color: #0f241b;
+}
+
 /* Notification toast  */
 .notification-toast {
   border-radius: 8px;
