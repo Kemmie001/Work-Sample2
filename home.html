@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden-Assesment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <main class="home-screen">
+      <div class="home-content">
+        <div class="lg-home-nav">
+          <div class="home-nav">
+            <div class="">
+              <img src="/assets/icons/menu.svg" alt="menu" />
+              <h2 class="header3">Hi, Aderinsola!</h2>
+            </div>
+            <img class="user" src="/assets/icons/user.svg" alt="user" />
+          </div>
+          <div class="tab text-sm">
+            <button class="active-tab text-gray-primary">Home</button>
+            <button class="text-tertiary">Upcoming</button>
+          </div>
+        </div>
+
+        <section class="advert">
+          <div class="">
+            <h6 class="text-md">Tap here to call us</h6>
+            <p class="text-sm">
+              Do you have any inquiry about your meals? You can simply tap to
+              call us.
+            </p>
+          </div>
+          <img src="/assets/icons/food.png" alt="" class="food" />
+        </section>
+        <section class="food-delivery">
+          <div class="heading">
+            <span>
+              <p class="text-green text-md">Food Delivery</p>
+              <img src="/assets/icons/food.svg" alt="food" />
+            </span>
+            <button
+              id="foodModalBtn"
+              class="btn-status-green text-green text-xs"
+            >
+              View Status
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.22217 11.5555L9.77772 7.99999L6.22217 4.44443"
+                  stroke="#03A84E"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="meal">
+            <img src="/assets/icons/meal.png" alt="meal" />
+            <div class="meal-name">
+              <p class="text-sm text-tertiary">French Fries with</p>
+              <p class="text-sm text-gray-primary">
+                BBQ Turkey Wings & Coleslaw
+              </p>
+            </div>
+          </div>
+          <span>
+            <img src="/assets/icons/clock.svg" alt="" />
+            <p class="text-secondary text-xs">10:00 AM - 11:30 AM</p>
+          </span>
+        </section>
+        <section class="home-cleaning">
+          <div class="heading">
+            <span>
+              <p class="text-orange text-md">Home Cleaning</p>
+              <img src="/assets/icons/house.svg" alt="food" />
+            </span>
+            <button
+              id="cleaningModalBtn"
+              class="btn-status-orange text-orange text-xs"
+            >
+              View Status
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.22217 11.5555L9.77772 7.99999L6.22217 4.44443"
+                  stroke="#FF9D00"
+                  stroke-width="1.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-sm text-black">
+            Get ready; our cleaner is coming to get your house pampered.
+          </p>
+          <span>
+            <img src="/assets/icons/clock.svg" alt="" />
+            <p class="text-secondary text-xs">10:00 AM - 11:30 AM</p>
+          </span>
+        </section>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <img class="icon" src="/assets/icons/Home.svg" alt="" />
+            <a class="text-green text-sm" href="/home.html">Home</a>
+          </li>
+          <li>
+            <img class="icon" src="/assets/icons/History.svg" alt="" />
+            <a class="text-grey text-sm" href="/home.html">History</a>
+          </li>
+          <li>
+            <img
+              class="icon"
+              src="/assets/icons/Notification Bell.svg"
+              alt=""
+            />
+            <a class="text-grey text-sm" href="/home.html">Notifications</a>
+          </li>
+          <li>
+            <img class="icon" src="/assets/icons/message.svg" alt="" />
+            <a class="text-grey text-sm" href="/home.html">Gardener</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <!-- View food delivery modal -->
+    <div class="modal food-modal" id="cleaningModal">
+      <div class="modal-content food-modal-content">
+        <div class="top">
+          <p class="text-xs text-tertiary">Mon, 08 Sep 2021</p>
+          <button class="btn-close close-food-modal">
+            <img src="/assets/icons/cancel.svg" alt="cancel" />
+          </button>
+        </div>
+        <div class="arrival-status">
+          <img src="/assets/icons/food.svg" alt="" />
+          <div class="">
+            <p class="text-xs text-tertiary">Order Status</p>
+            <p class="text-md text-gray-primary">Order has arrived</p>
+          </div>
+        </div>
+        <div class="delivery-address">
+          <p class="text-xs text-tertiary">Delivery Address</p>
+          <p class="text-md text-gray-primary">
+            No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+          </p>
+        </div>
+        <section class="">
+          <div class="order-status">
+            <span class="">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="8" fill="#14B757" />
+                <circle cx="8" cy="8" r="4" fill="white" />
+              </svg>
+              <div class="line"></div>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Order has arrived</p>
+                <p class="text-sm text-tertiary">10:56 AM</p>
+              </div>
+              <p class="text-md text-tertiary">
+                Your order has arrived at your location. Pick it up!
+              </p>
+            </div>
+          </div>
+          <div class="order-status way">
+            <span class="">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.13184 14.1799L11.2125 19.1799L21.8818 8.67993"
+                  stroke="#14B757"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Order on the way</p>
+                <p class="text-sm text-tertiary">9:14 AM</p>
+              </div>
+              <p class="text-md text-tertiary">
+                Your order has been dispatched and is on the way to you.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- View cleaning house modal -->
+    <div class="modal cleaning-modal" id="cleaningModal">
+      <div class="modal-content cleaning-modal-content">
+        <div class="top">
+          <p class="text-xs text-tertiary">Mon, 08 Sep 2021</p>
+          <button class="btn-close close-cleaning-modal">
+            <img src="/assets/icons/cancel.svg" alt="cancel" />
+          </button>
+        </div>
+        <div class="arrival-status">
+          <img src="/assets/icons/house.svg" alt="" />
+          <div class="">
+            <p class="text-xs text-tertiary">Order Status</p>
+            <p class="text-md text-gray-primary">Cleaning completed</p>
+          </div>
+        </div>
+        <div class="delivery-address">
+          <p class="text-xs text-tertiary">Cleaning Address</p>
+          <p class="text-md text-gray-primary">
+            No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+          </p>
+          <div class="cleaner-name">
+            <p class="text-xs text-tertiary">Cleaner</p>
+            <p class="text-md text-gray-primary">
+              Kelechi Oguike
+            </p>
+          </div>
+        </div>
+        <section class="">
+          <div class="order-status">
+            <span class="">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.13184 14.1799L11.2125 19.1799L21.8818 8.67993"
+                  stroke="#14B757"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="line"></div>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Cleaning completed</p>
+                <p class="text-sm text-tertiary">4:01 PM</p>
+              </div>
+              <p class="text-sm text-green">
+                Give feedback.
+              </p>
+            </div>
+          </div>
+          <div class="order-status">
+            <span class="">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.13184 14.1799L11.2125 19.1799L21.8818 8.67993"
+                  stroke="#14B757"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="line"></div>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Cleaning started</p>
+                <p class="text-sm text-tertiary">2:35 PM</p>
+              </div>
+              <p class="text-md text-tertiary">
+                Your cleaner has started cleaning.
+              </p>
+            </div>
+          </div>
+          <div class="order-status">
+            <span class="">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.13184 14.1799L11.2125 19.1799L21.8818 8.67993"
+                  stroke="#14B757"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="line"></div>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Cleaner has arrived</p>
+                <p class="text-sm text-tertiary">2:26 PM</p>
+              </div>
+              <p class="text-md text-tertiary">
+                Your cleaner has arrived at your location.
+              </p>
+            </div>
+          </div>
+          <div class="order-status">
+            <span class="">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.13184 14.1799L11.2125 19.1799L21.8818 8.67993"
+                  stroke="#14B757"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <div class="">
+              <div class="status-detail">
+                <p class="text-md text-gray-primary">Cleaner en route</p>
+                <p class="text-sm text-tertiary">12:22 PM</p>
+              </div>
+              <p class="text-md text-tertiary">
+                Your cleaner is on the way to your location!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
