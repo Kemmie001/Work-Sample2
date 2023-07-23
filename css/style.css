@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Color variables */
+:root {
+  --green-primary: #03a84e;
+  --grey-primary: #0f241b;
+  --grey-tertiary: #4b6358;
+  --orange-primary: #ff9d00;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Add Cerebri Sans font */
+@font-face {
+  font-family: "Cerebri";
+  src: url("/assets/font/Cerebri-Sans-Regular.ttf");
+}
+
+.container {
+  padding: 5% 7%;
+}
+
+/* Headers */
+.header1 {
+  color: var(--grey-primary);
+  font-family: "PT Serif", serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.header2 {
+  color: var(--grey-primary);
+  font-family: "Cerebri";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Headers */
+.header3 {
+  color: var(--grey-primary);
+  font-family: "PT Serif", serif;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* paragraph styles */
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 20px;
+  font-family: "Cerebri";
+}
+.text-md {
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: "Cerebri";
+}
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+.text-tertiary {
+  color: var(--grey-tertiary);
+  font-family: "Cerebri";
+}
+.text-secondary {
+  color: #1d352a;
+  font-family: "Cerebri";
+}
+.text-green {
+  color: var(--green-primary);
+  font-family: "Cerebri";
+}
+.text-black {
+  color: #000;
+  font-family: "Cerebri";
+}
+.text-gray-primary {
+  color: var(--grey-primary);
+  font-family: "Cerebri";
+}
+.text-orange {
+  color: var(--orange-primary);
+  font-family: "Cerebri";
+}
+.text-grey {
+  color: #8aa398;
+  font-family: "Cerebri";
+}
+
+/* Notification toast  */
+.notification-toast {
+  border-radius: 8px;
+  display: flex;
+  gap: 5px;
+  align-items: start;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.warning {
+  border: 1px solid #ffebb2;
+  background: #fffdf5;
+}
+
+.info {
+  border: 1px solid #cbd8d2;
+  background: #f9fbfa;
+}
+
+/* Button */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  color: #fff;
+  background: var(--green-primary);
+}
+
+/*  review-heading */
+.review-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.review-heading h3 {
+  margin: 0 auto;
+}
+
+/* back button */
+.back-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f0f4f2;
+}
+
+.back-btn img {
+  width: 20px;
+}
+
+/* review detail */
+.review-detail {
+  margin: 32px 0;
+}
+.review-detail p {
+  margin-top: 0.2rem;
+}
+
+/* review-plans */
+.review-plans {
+}
+.plan-heading {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.plans {
+  padding-top: 24px;
+  border-top: 1px solid #cbd8d2;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cbd8d2;
+}
+.plan {
+  border-radius: 16px;
+  padding: 1.4rem 1rem;
+  margin-bottom: 1.4rem;
+}
+.plan > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan-detail {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+.plan-price {
+  padding-top: 0.5em;
+  padding-left: 1.8rem;
+}
+.food-plan {
+  background-color: #e9fbf2;
+}
+.laundry-plan {
+  background-color: #e5e9fc;
+}
+.cleaning-plan {
+  background-color: #fff3df;
+}
+.beauty-plan {
+  background-color: #fbe7f2;
+}
+
+/* date */
+.plan-section {
+  margin-top: 1rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cbd8d2;
+}
+
+/* discount input */
+.discount-input {
+  display: flex;
+  align-items: start;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.discount-input input {
+  border: none;
+  border-bottom: 1px solid #0f241b;
+  outline: none;
+  color: var(--grey-primary);
+}
+input::placeholder {
+  color: var(--grey-primary);
+}
+
+.remove-code {
+  border-radius: 32px;
+  border: 1px solid #e2e9e6;
+  padding: 0.5rem;
+}
+
+.discount-input input:focus {
+  border-bottom: 1px solid var(--green-primary);
+}
+
+/* cost */
+.cost {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cost div {
+  display: flex;
+  justify-content: space-between;
+}
+.duration {
+  font-family: Cerebri Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  width: 180px;
+  text-align: right;
+  margin-left: auto;
+  margin-top: 4px;
+  margin-bottom: 1rem;
+}
+
+.btn-view {
+  margin-top: 2.2rem;
+  width: 100%;
+}
+/* Footer */
+footer {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+/* Large screen */
+@media screen and (min-width: 1028px) {
+  .header1 {
+    font-size: 1.3rem;
+  }
+  .header2 {
+    font-size: 1.15rem;
+  }
+  .header3 {
+    font-size: 1.3rem;
+  }
+  .text-sm {
+    font-size: 1rem;
+  }
+  .text-md {
+    font-size: 1.2rem;
+  }
+  .text-xs {
+    font-size: 0.8rem;
+  }
+  .btn-primary {
+    margin: 2rem auto;
+    width: 250px;
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .discount-input input {
+    width: 250px;
+  }
+}
