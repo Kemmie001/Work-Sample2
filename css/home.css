@@ -174,8 +174,9 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: transform 1s ease-in-out;
+  background: rgba(15, 36, 27, 0.2);
+  backdrop-filter: blur(1px);
+  transition: transform 0.5s ease-in-out;
 }
 
 .modal-content {
@@ -183,7 +184,6 @@
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 95%;
 }
 
